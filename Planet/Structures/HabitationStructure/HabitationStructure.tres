@@ -1,0 +1,21 @@
+[gd_resource type="SpatialMaterial" load_steps=5 format=2]
+
+[ext_resource path="res://Planet/Structures/HabitationStructure/HabitationStructureNormal.png" type="Texture" id=1]
+[ext_resource path="res://Planet/Structures/HabitationStructure/HabitationStructureRoughness.png" type="Texture" id=2]
+[ext_resource path="res://Planet/Structures/HabitationStructure/HabitationStructureDiffuse.png" type="Texture" id=3]
+[ext_resource path="res://Planet/Structures/HabitationStructure/HabitationStructureAO.png" type="Texture" id=4]
+
+[resource]
+flags_transparent = true
+params_cull_mode = 2
+params_depth_draw_mode = 3
+albedo_texture = ExtResource( 3 )
+roughness_texture = ExtResource( 2 )
+normal_enabled = true
+normal_scale = 1.0
+normal_texture = ExtResource( 1 )
+ao_enabled = true
+ao_light_affect = 0.0
+ao_texture = ExtResource( 4 )
+ao_on_uv2 = false
+ao_texture_channel = 0

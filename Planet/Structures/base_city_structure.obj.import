@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/base_city_structure.obj-ded64f0097ec57dced3319cfdcae4078.mesh"
+
+[deps]
+
+files=[ "res://.import/base_city_structure.obj-ded64f0097ec57dced3319cfdcae4078.mesh" ]
+
+source_file="res://Planet/Structures/base_city_structure.obj"
+dest_files=[ "res://.import/base_city_structure.obj-ded64f0097ec57dced3319cfdcae4078.mesh", "res://.import/base_city_structure.obj-ded64f0097ec57dced3319cfdcae4078.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

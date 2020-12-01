@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Robots/TerraBotMaterial.tres" type="Material" id=1]
+[ext_resource path="res://Robots/terrabot_3_full_mine_animation.glb" type="PackedScene" id=2]
+[ext_resource path="res://Robots/Robot.gd" type="Script" id=3]
+
+[node name="terrabot_3_full_mine_animation" instance=ExtResource( 2 )]
+script = ExtResource( 3 )
+
+[node name="TerrabotBase" parent="MovementController/Skeleton" index="0"]
+transform = Transform( -0.2, 0, -6.51683e-08, 0, 0.2, 0, 6.51683e-08, 0, -0.2, 0, 0, 0 )
+material/0 = ExtResource( 1 )
+material/1 = ExtResource( 1 )
+material/2 = ExtResource( 1 )
+material/3 = ExtResource( 1 )
+material/4 = ExtResource( 1 )
+material/5 = ExtResource( 1 )
+material/6 = ExtResource( 1 )
+material/7 = ExtResource( 1 )

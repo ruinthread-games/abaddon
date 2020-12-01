@@ -1,0 +1,6 @@
+*.png
+*.hdr
+.import/
+.mono/
+.vscode/
+*.swp

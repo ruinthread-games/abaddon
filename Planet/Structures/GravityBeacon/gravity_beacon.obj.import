@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/gravity_beacon.obj-318bb5df000021d56abf15e626aa2547.mesh"
+
+[deps]
+
+files=[ "res://.import/gravity_beacon.obj-318bb5df000021d56abf15e626aa2547.mesh" ]
+
+source_file="res://Planet/Structures/GravityBeacon/gravity_beacon.obj"
+dest_files=[ "res://.import/gravity_beacon.obj-318bb5df000021d56abf15e626aa2547.mesh", "res://.import/gravity_beacon.obj-318bb5df000021d56abf15e626aa2547.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

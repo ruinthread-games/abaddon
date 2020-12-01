@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/planet_base_ico_sdiv_p2.obj-5d4b5eb0adf79ec83517feaf17b085a1.mesh"
+
+[deps]
+
+files=[ "res://.import/planet_base_ico_sdiv_p2.obj-5d4b5eb0adf79ec83517feaf17b085a1.mesh" ]
+
+source_file="res://Planet/planet_base_ico_sdiv_p2.obj"
+dest_files=[ "res://.import/planet_base_ico_sdiv_p2.obj-5d4b5eb0adf79ec83517feaf17b085a1.mesh", "res://.import/planet_base_ico_sdiv_p2.obj-5d4b5eb0adf79ec83517feaf17b085a1.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

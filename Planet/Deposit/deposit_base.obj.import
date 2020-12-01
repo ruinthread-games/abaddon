@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/deposit_base.obj-699b7767fa0e586fd8c4a5bc6ce0f424.mesh"
+
+[deps]
+
+files=[ "res://.import/deposit_base.obj-699b7767fa0e586fd8c4a5bc6ce0f424.mesh" ]
+
+source_file="res://Planet/Deposit/deposit_base.obj"
+dest_files=[ "res://.import/deposit_base.obj-699b7767fa0e586fd8c4a5bc6ce0f424.mesh", "res://.import/deposit_base.obj-699b7767fa0e586fd8c4a5bc6ce0f424.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

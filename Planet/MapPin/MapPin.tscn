@@ -1,0 +1,44 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Planet/MapPin/PinNormal.png" type="Texture" id=1]
+[ext_resource path="res://Planet/MapPin/ClothNormal.png" type="Texture" id=2]
+[ext_resource path="res://Planet/MapPin/PinRoughness.png" type="Texture" id=3]
+[ext_resource path="res://Planet/MapPin/ClothAO.png" type="Texture" id=4]
+[ext_resource path="res://Planet/MapPin/PinDiffuse.png" type="Texture" id=5]
+[ext_resource path="res://Planet/MapPin/ClothDiffuse.png" type="Texture" id=6]
+[ext_resource path="res://Planet/map_pin_applied.glb" type="PackedScene" id=7]
+[ext_resource path="res://Planet/MapPin/MapPin.gd" type="Script" id=8]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_texture = ExtResource( 5 )
+metallic = 0.86
+roughness_texture = ExtResource( 3 )
+normal_enabled = true
+normal_scale = 1.0
+normal_texture = ExtResource( 1 )
+
+[sub_resource type="SpatialMaterial" id=2]
+params_cull_mode = 2
+albedo_color = Color( 0.921569, 0.0941176, 0.0745098, 1 )
+albedo_texture = ExtResource( 6 )
+normal_enabled = true
+normal_scale = 1.0
+normal_texture = ExtResource( 2 )
+ao_enabled = true
+ao_light_affect = 0.0
+ao_texture = ExtResource( 4 )
+ao_on_uv2 = false
+ao_texture_channel = 0
+
+[node name="map_pin_applied" instance=ExtResource( 7 )]
+script = ExtResource( 8 )
+
+[node name="Pin" parent="." index="0"]
+transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 5.01423, 0 )
+material/0 = SubResource( 1 )
+
+[node name="ClothBanner" parent="." index="1"]
+transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 5.01423, 0 )
+blend_shapes/frame_0087 = 0.644522
+blend_shapes/frame_0088 = 0.355478
+material/0 = SubResource( 2 )

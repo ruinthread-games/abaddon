@@ -1,0 +1,68 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://InstructionGraph/ConditionalNode.gd" type="Script" id=1]
+
+[node name="GraphNode" type="GraphNode"]
+margin_left = 5.0
+margin_top = 2.0
+margin_right = 121.0
+margin_bottom = 122.0
+title = "Condition"
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color( 1, 1, 1, 1 )
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color( 1, 1, 1, 1 )
+slot/1/left_enabled = false
+slot/1/left_type = 0
+slot/1/left_color = Color( 1, 1, 1, 1 )
+slot/1/right_enabled = false
+slot/1/right_type = 0
+slot/1/right_color = Color( 1, 1, 1, 1 )
+slot/2/left_enabled = false
+slot/2/left_type = 0
+slot/2/left_color = Color( 1, 1, 1, 1 )
+slot/2/right_enabled = false
+slot/2/right_type = 0
+slot/2/right_color = Color( 1, 1, 1, 1 )
+slot/3/left_enabled = false
+slot/3/left_type = 0
+slot/3/left_color = Color( 1, 1, 1, 1 )
+slot/3/right_enabled = false
+slot/3/right_type = 0
+slot/3/right_color = Color( 1, 1, 1, 1 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FirstInput" type="Label" parent="."]
+margin_left = 16.0
+margin_top = 24.0
+margin_right = 100.0
+margin_bottom = 38.0
+text = "First"
+
+[node name="ItemList" type="ItemList" parent="."]
+margin_left = 16.0
+margin_top = 39.0
+margin_right = 100.0
+margin_bottom = 66.0
+items = [ "<", null, false, "=", null, false, "!=", null, false, ">", null, false ]
+auto_height = true
+max_columns = 4
+
+[node name="SecondInput" type="Label" parent="."]
+margin_left = 16.0
+margin_top = 67.0
+margin_right = 100.0
+margin_bottom = 81.0
+text = "Second"
+
+[node name="Output" type="Label" parent="."]
+margin_left = 16.0
+margin_top = 82.0
+margin_right = 100.0
+margin_bottom = 96.0
+[connection signal="item_selected" from="ItemList" to="." method="_on_ItemList_item_selected"]

@@ -1,0 +1,43 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Planet/Deposit/power_crystal.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Planet/Deposit/leviathan_bones.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://Planet/Deposit/Deposit.gd" type="Script" id=3]
+[ext_resource path="res://Planet/Deposit/BonesDeposit.tres" type="Material" id=4]
+[ext_resource path="res://Planet/Deposit/brick_material.obj" type="ArrayMesh" id=5]
+[ext_resource path="res://Planet/Deposit/BrickResourceDiffuse.png" type="Texture" id=6]
+[ext_resource path="res://Planet/Deposit/BrickResourceNormal.png" type="Texture" id=7]
+[ext_resource path="res://Planet/Deposit/BrickResourceRoughness.png" type="Texture" id=8]
+[ext_resource path="res://Planet/Deposit/BrickResourceAO.png" type="Texture" id=9]
+[ext_resource path="res://Planet/Deposit/power_crystal.tres" type="Material" id=10]
+
+[sub_resource type="SpatialMaterial" id=10]
+albedo_texture = ExtResource( 6 )
+roughness_texture = ExtResource( 8 )
+normal_enabled = true
+normal_scale = 1.0
+normal_texture = ExtResource( 7 )
+ao_enabled = true
+ao_light_affect = 0.0
+ao_texture = ExtResource( 9 )
+ao_on_uv2 = false
+ao_texture_channel = 0
+
+[node name="Spatial" type="Spatial"]
+script = ExtResource( 3 )
+
+[node name="FirstiumInstance" type="MeshInstance" parent="."]
+transform = Transform( 1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 0, 0.352557, 0 )
+mesh = ExtResource( 1 )
+material/0 = ExtResource( 10 )
+material/1 = ExtResource( 10 )
+
+[node name="SecondiumInstance" type="MeshInstance" parent="."]
+transform = Transform( 0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, -0.376381, 0 )
+mesh = ExtResource( 5 )
+material/0 = SubResource( 10 )
+
+[node name="ThirdiumInstance" type="MeshInstance" parent="."]
+transform = Transform( 0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0 )
+mesh = ExtResource( 2 )
+material/0 = ExtResource( 4 )

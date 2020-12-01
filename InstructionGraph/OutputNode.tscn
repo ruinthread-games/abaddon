@@ -1,0 +1,171 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://InstructionGraph/OutputNode.gd" type="Script" id=1]
+
+[node name="GraphNode" type="GraphNode"]
+margin_right = 168.0
+margin_bottom = 164.0
+title = "Action"
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color( 1, 1, 1, 1 )
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color( 1, 1, 1, 1 )
+slot/1/left_enabled = false
+slot/1/left_type = 0
+slot/1/left_color = Color( 1, 1, 1, 1 )
+slot/1/right_enabled = false
+slot/1/right_type = 0
+slot/1/right_color = Color( 1, 1, 1, 1 )
+slot/2/left_enabled = false
+slot/2/left_type = 0
+slot/2/left_color = Color( 1, 1, 1, 1 )
+slot/2/right_enabled = false
+slot/2/right_type = 0
+slot/2/right_color = Color( 1, 1, 1, 1 )
+slot/3/left_enabled = false
+slot/3/left_type = 0
+slot/3/left_color = Color( 1, 1, 1, 1 )
+slot/3/right_enabled = false
+slot/3/right_type = 0
+slot/3/right_color = Color( 1, 1, 1, 1 )
+slot/4/left_enabled = false
+slot/4/left_type = 0
+slot/4/left_color = Color( 1, 1, 1, 1 )
+slot/4/right_enabled = false
+slot/4/right_type = 0
+slot/4/right_color = Color( 1, 1, 1, 1 )
+slot/5/left_enabled = false
+slot/5/left_type = 0
+slot/5/left_color = Color( 1, 1, 1, 1 )
+slot/5/right_enabled = false
+slot/5/right_type = 0
+slot/5/right_color = Color( 1, 1, 1, 1 )
+slot/6/left_enabled = false
+slot/6/left_type = 0
+slot/6/left_color = Color( 1, 1, 1, 1 )
+slot/6/right_enabled = false
+slot/6/right_type = 0
+slot/6/right_color = Color( 1, 1, 1, 1 )
+slot/7/left_enabled = false
+slot/7/left_type = 0
+slot/7/left_color = Color( 1, 1, 1, 1 )
+slot/7/right_enabled = false
+slot/7/right_type = 0
+slot/7/right_color = Color( 1, 1, 1, 1 )
+slot/8/left_enabled = false
+slot/8/left_type = 0
+slot/8/left_color = Color( 1, 1, 1, 1 )
+slot/8/right_enabled = false
+slot/8/right_type = 0
+slot/8/right_color = Color( 1, 1, 1, 1 )
+slot/9/left_enabled = false
+slot/9/left_type = 0
+slot/9/left_color = Color( 1, 1, 1, 1 )
+slot/9/right_enabled = false
+slot/9/right_type = 0
+slot/9/right_color = Color( 1, 1, 1, 1 )
+slot/10/left_enabled = false
+slot/10/left_type = 0
+slot/10/left_color = Color( 1, 1, 1, 1 )
+slot/10/right_enabled = false
+slot/10/right_type = 0
+slot/10/right_color = Color( 1, 1, 1, 1 )
+slot/11/left_enabled = false
+slot/11/left_type = 0
+slot/11/left_color = Color( 1, 1, 1, 1 )
+slot/11/right_enabled = false
+slot/11/right_type = 0
+slot/11/right_color = Color( 1, 1, 1, 1 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Move" type="Label" parent="."]
+margin_left = 16.0
+margin_top = 24.0
+margin_right = 152.0
+margin_bottom = 38.0
+text = "Move to:"
+
+[node name="Phi" type="Label" parent="."]
+margin_left = 16.0
+margin_top = 39.0
+margin_right = 152.0
+margin_bottom = 53.0
+text = "  Longitude"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Theta" type="Label" parent="."]
+margin_left = 16.0
+margin_top = 54.0
+margin_right = 152.0
+margin_bottom = 68.0
+text = "  Latitude"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSeparator" type="HSeparator" parent="."]
+margin_left = 16.0
+margin_top = 69.0
+margin_right = 152.0
+margin_bottom = 73.0
+
+[node name="Build" type="Label" parent="."]
+margin_left = 16.0
+margin_top = 74.0
+margin_right = 152.0
+margin_bottom = 88.0
+text = "Build:"
+
+[node name="BuildPowerStation" type="Label" parent="."]
+margin_left = 16.0
+margin_top = 89.0
+margin_right = 152.0
+margin_bottom = 103.0
+text = "  Power station"
+
+[node name="BuildGravityBeacon" type="Label" parent="."]
+margin_left = 16.0
+margin_top = 104.0
+margin_right = 152.0
+margin_bottom = 118.0
+text = "  Gravity beacon"
+
+[node name="BuildHabitationStructure" type="Label" parent="."]
+margin_left = 16.0
+margin_top = 119.0
+margin_right = 152.0
+margin_bottom = 133.0
+text = "  Habitation structure"
+
+[node name="HSeparator2" type="HSeparator" parent="."]
+margin_left = 16.0
+margin_top = 134.0
+margin_right = 152.0
+margin_bottom = 138.0
+
+[node name="Mine" type="Label" parent="."]
+margin_left = 16.0
+margin_top = 139.0
+margin_right = 152.0
+margin_bottom = 153.0
+text = "Mine"
+
+[node name="HSeparator3" type="HSeparator" parent="."]
+margin_left = 16.0
+margin_top = 154.0
+margin_right = 152.0
+margin_bottom = 158.0
+
+[node name="Attack" type="Label" parent="."]
+margin_left = 16.0
+margin_top = 159.0
+margin_right = 152.0
+margin_bottom = 173.0
+text = "Attack"

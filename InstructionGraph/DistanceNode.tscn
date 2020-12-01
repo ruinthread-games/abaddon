@@ -1,0 +1,64 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://InstructionGraph/DistanceNode.gd" type="Script" id=1]
+
+[node name="GraphNode" type="GraphNode"]
+margin_right = 145.0
+margin_bottom = 100.0
+title = "Distance"
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color( 1, 1, 1, 1 )
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color( 1, 1, 1, 1 )
+slot/1/left_enabled = false
+slot/1/left_type = 0
+slot/1/left_color = Color( 1, 1, 1, 1 )
+slot/1/right_enabled = false
+slot/1/right_type = 0
+slot/1/right_color = Color( 1, 1, 1, 1 )
+slot/2/left_enabled = false
+slot/2/left_type = 0
+slot/2/left_color = Color( 1, 1, 1, 1 )
+slot/2/right_enabled = false
+slot/2/right_type = 0
+slot/2/right_color = Color( 1, 1, 1, 1 )
+slot/3/left_enabled = false
+slot/3/left_type = 0
+slot/3/left_color = Color( 1, 1, 1, 1 )
+slot/3/right_enabled = false
+slot/3/right_type = 0
+slot/3/right_color = Color( 1, 1, 1, 1 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FirstLongitude" type="Label" parent="."]
+margin_left = 16.0
+margin_top = 24.0
+margin_right = 129.0
+margin_bottom = 38.0
+text = "first Longitude"
+
+[node name="FirstLatitude" type="Label" parent="."]
+margin_left = 16.0
+margin_top = 39.0
+margin_right = 129.0
+margin_bottom = 53.0
+text = "first Latitude"
+
+[node name="SecondLongitude" type="Label" parent="."]
+margin_left = 16.0
+margin_top = 54.0
+margin_right = 129.0
+margin_bottom = 68.0
+text = "second Longitude"
+
+[node name="SecondLatitude" type="Label" parent="."]
+margin_left = 16.0
+margin_top = 69.0
+margin_right = 129.0
+margin_bottom = 83.0
+text = "second Latitude"

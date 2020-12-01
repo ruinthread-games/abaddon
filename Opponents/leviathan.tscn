@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Opponents/leviathan_export_2.glb" type="PackedScene" id=1]
+[ext_resource path="res://Opponents/Opponent.gd" type="Script" id=2]
+
+[node name="leviathan_export_2" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="LeviathanApplied" parent="Armature/Skeleton" index="0"]
+transform = Transform( 0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0 )

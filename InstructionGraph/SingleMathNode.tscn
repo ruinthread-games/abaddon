@@ -1,0 +1,52 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://InstructionGraph/SingleMathNode.gd" type="Script" id=1]
+
+[node name="GraphNode" type="GraphNode"]
+margin_right = 155.0
+margin_bottom = 123.0
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color( 1, 1, 1, 1 )
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color( 1, 1, 1, 1 )
+slot/1/left_enabled = false
+slot/1/left_type = 0
+slot/1/left_color = Color( 1, 1, 1, 1 )
+slot/1/right_enabled = false
+slot/1/right_type = 0
+slot/1/right_color = Color( 1, 1, 1, 1 )
+slot/2/left_enabled = false
+slot/2/left_type = 0
+slot/2/left_color = Color( 1, 1, 1, 1 )
+slot/2/right_enabled = false
+slot/2/right_type = 0
+slot/2/right_color = Color( 1, 1, 1, 1 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Input" type="Label" parent="."]
+margin_left = 16.0
+margin_top = 24.0
+margin_right = 139.0
+margin_bottom = 38.0
+
+[node name="ItemList" type="ItemList" parent="."]
+margin_left = 16.0
+margin_top = 39.0
+margin_right = 139.0
+margin_bottom = 120.0
+items = [ "sin", null, false, "cos", null, false, "tan", null, false, "exp", null, false, "square", null, false, "sqrt", null, false, "abs", null, false, "sign", null, false ]
+auto_height = true
+max_columns = 3
+fixed_column_width = 42
+
+[node name="Output" type="Label" parent="."]
+margin_left = 16.0
+margin_top = 121.0
+margin_right = 139.0
+margin_bottom = 135.0
+[connection signal="item_selected" from="ItemList" to="." method="_on_ItemList_item_selected"]

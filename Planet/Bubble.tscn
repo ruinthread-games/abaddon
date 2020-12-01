@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Planet/Bubble.tres" type="Material" id=1]
+
+[node name="CSGSphere" type="CSGSphere"]
+radius = 40.0
+radial_segments = 24
+rings = 12
+material = ExtResource( 1 )

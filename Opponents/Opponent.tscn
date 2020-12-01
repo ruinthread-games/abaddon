@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Opponents/Opponent.gd" type="Script" id=1]
+
+[sub_resource type="CylinderMesh" id=1]
+
+[node name="Spatial" type="Spatial"]
+script = ExtResource( 1 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 2, 0, 0, 0, 1.4, 0, 0, 0, 3, 0, 1.09849, 0 )
+mesh = SubResource( 1 )
+material/0 = null

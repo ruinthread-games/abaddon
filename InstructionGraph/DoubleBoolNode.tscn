@@ -1,0 +1,68 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://InstructionGraph/DoubleBoolNode.gd" type="Script" id=1]
+
+[node name="GraphNode" type="GraphNode"]
+margin_left = -1.0
+margin_top = -1.0
+margin_right = 134.0
+margin_bottom = 89.0
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color( 1, 1, 1, 1 )
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color( 1, 1, 1, 1 )
+slot/1/left_enabled = false
+slot/1/left_type = 0
+slot/1/left_color = Color( 1, 1, 1, 1 )
+slot/1/right_enabled = false
+slot/1/right_type = 0
+slot/1/right_color = Color( 1, 1, 1, 1 )
+slot/2/left_enabled = false
+slot/2/left_type = 0
+slot/2/left_color = Color( 1, 1, 1, 1 )
+slot/2/right_enabled = false
+slot/2/right_type = 0
+slot/2/right_color = Color( 1, 1, 1, 1 )
+slot/3/left_enabled = false
+slot/3/left_type = 0
+slot/3/left_color = Color( 1, 1, 1, 1 )
+slot/3/right_enabled = false
+slot/3/right_type = 0
+slot/3/right_color = Color( 1, 1, 1, 1 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FirstInput" type="Label" parent="."]
+margin_left = 16.0
+margin_top = 24.0
+margin_right = 119.0
+margin_bottom = 38.0
+
+[node name="ItemList" type="ItemList" parent="."]
+margin_left = 16.0
+margin_top = 39.0
+margin_right = 119.0
+margin_bottom = 84.0
+rect_min_size = Vector2( 50, 45 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+items = [ "and", null, false, "or", null, false ]
+max_columns = 2
+fixed_column_width = 30
+
+[node name="SecondInput" type="Label" parent="."]
+margin_left = 16.0
+margin_top = 85.0
+margin_right = 119.0
+margin_bottom = 99.0
+
+[node name="Output" type="Label" parent="."]
+margin_left = 16.0
+margin_top = 100.0
+margin_right = 119.0
+margin_bottom = 114.0
+[connection signal="item_selected" from="ItemList" to="." method="_on_ItemList_item_selected"]
